@@ -1,3 +1,4 @@
 $('.close-alert').click(function(){
-    this.parent('.alert').addClass('closed')
+    console.log($(this).parents('.alert'))
+    $(this).parents('.alert').addClass('closed')
 })
