@@ -134,6 +134,9 @@ a {
 
 button {
   font-weight: 500;
+  background-color: transparent;
+  border: none;
+  padding: none;
 }
 
 .max-width {
@@ -209,7 +212,141 @@ footer .legal-links a:first-child {
   border-right: 1px solid #292B2D;
 }
 
-button {
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F0F2F5;
+  border-radius: 2px;
+  padding: 16px 24px;
+}
+.alert.info {
+  background-color: #DFF9FF;
+}
+.alert.info .left svg path {
+  fill: #0995D4;
+}
+.alert.success {
+  background-color: #DEFFD6;
+}
+.alert.success .left svg path {
+  fill: #30A233;
+}
+.alert.warning {
+  background-color: #FFF1D4;
+}
+.alert.warning .left svg path {
+  fill: #B07600;
+}
+.alert.error {
+  background-color: #FFE6E0;
+}
+.alert.error .left svg path {
+  fill: #D8332E;
+}
+.alert.muted {
+  background-color: #292B2D;
+  color: #ffffff;
+}
+.alert.muted .left svg path {
+  fill: #ffffff;
+}
+.alert.muted .right a {
+  color: #ffffff;
+}
+.alert .left {
+  display: flex;
+  align-items: center;
+}
+.alert .left h4 {
+  margin: 0 16px;
+}
+.alert .right {
+  display: flex;
+  align-items: center;
+}
+.alert .right .close-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.avatar {
+  border-radius: 50%;
+  background-color: #DFE1E3;
+  color: #292B2D;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.avatar.large {
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.avatar.med {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.avatar.small {
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  line-height: 16px;
+}
+.avatar.icon svg, .avatar.icon img {
+  width: 24px;
+  height: 24px;
+}
+.avatar.icon.large svg, .avatar.icon.large img {
+  width: 16px;
+  height: 16px;
+}
+.avatar.icon.med svg, .avatar.icon.med img {
+  width: 12px;
+  height: 12px;
+}
+.avatar.icon.small svg, .avatar.icon.small img {
+  width: 12px;
+  height: 12px;
+}
+.avatar.image {
+  background-image: url("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.avatar-stack {
+  display: flex;
+  align-items: center;
+}
+.avatar-stack .avatar {
+  margin-left: -8px;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+}
+.avatar-stack .avatar:first-child {
+  margin-left: 0;
+}
+.avatar-stack .avatar.small, .avatar-stack .avatar.med {
+  margin-left: -4px;
+  border-width: 1px;
+}
+
+.btn {
   border-radius: 4px;
   background: transparent;
   border: 2px solid #006A88;
@@ -227,96 +364,96 @@ button {
   width: fit-content;
   font-family: "Inter", sans-serif;
 }
-button:hover {
+.btn:hover {
   background-color: #F0F2F5;
 }
-button:focus {
+.btn:focus {
   outline: 4px solid #93E8FF;
 }
-button:active {
+.btn:active {
   background-color: #DFE1E3;
 }
-button:disabled {
+.btn:disabled {
   background-color: #F0F2F5;
   color: #BBBDBF;
   pointer-events: none;
   border: 2px solid #BBBDBF;
 }
-button.outline {
+.btn.outline {
   padding: 6px 14px;
 }
-button.primary {
+.btn.primary {
   background-color: #006A88;
   color: #ffffff;
   border: none;
 }
-button.primary:hover {
+.btn.primary:hover {
   background-color: #00394B;
   box-shadow: 0px 2px 4px rgba(11, 13, 14, 0.25);
 }
-button.primary:active, button.primary:focus {
+.btn.primary:active, .btn.primary:focus {
   background-color: #00394B;
 }
-button.primary:disabled {
+.btn.primary:disabled {
   background-color: #F0F2F5;
   color: #BBBDBF;
   pointer-events: none;
   border: none;
 }
-button.transparent {
+.btn.transparent {
   color: #292B2D;
   border: none;
 }
-button.transparent:hover {
+.btn.transparent:hover {
   background-color: #F0F2F5;
 }
-button.transparent:active, button.transparent:focus {
+.btn.transparent:active, .btn.transparent:focus {
   background-color: #DFE1E3;
 }
-button.transparent:disabled {
+.btn.transparent:disabled {
   background-color: #F0F2F5;
   color: #BBBDBF;
   pointer-events: none;
   border: none;
 }
-button.tonal {
+.btn.tonal {
   color: #292B2D;
   border: none;
   background-color: #F0F2F5;
 }
-button.tonal:hover {
+.btn.tonal:hover {
   background-color: #DFE1E3;
   box-shadow: 0px 2px 4px rgba(11, 13, 14, 0.25);
 }
-button.tonal:active, button.tonal:focus {
+.btn.tonal:active, .btn.tonal:focus {
   background-color: #DFE1E3;
 }
-button.tonal:disabled {
+.btn.tonal:disabled {
   background-color: #F0F2F5;
   color: #BBBDBF;
   pointer-events: none;
   border: none;
 }
-button.elevated {
+.btn.elevated {
   color: #292B2D;
   border: none;
   background-color: #F0F2F5;
   box-shadow: 0px 2px 4px rgba(11, 13, 14, 0.25);
 }
-button.elevated:hover {
+.btn.elevated:hover {
   background-color: #DFE1E3;
   box-shadow: 0px 4px 8px rgba(11, 13, 14, 0.25);
 }
-button.elevated:active, button.elevated:focus {
+.btn.elevated:active, .btn.elevated:focus {
   background-color: #DFE1E3;
 }
-button.elevated:disabled {
+.btn.elevated:disabled {
   background-color: #F0F2F5;
   color: #BBBDBF;
   pointer-events: none;
   border: none;
 }
-button.text {
+.btn.text {
   color: #006A88;
   border: none;
   background-color: transparent;
@@ -324,34 +461,34 @@ button.text {
   text-decoration: underline;
   border-radius: 4;
 }
-button.text:hover {
+.btn.text:hover {
   color: #00394B;
 }
-button.text:active, button.text:focus {
+.btn.text:active, .btn.text:focus {
   background-color: transparent;
 }
-button.text:disabled {
+.btn.text:disabled {
   background-color: transparent;
   color: #BBBDBF;
   pointer-events: none;
   border: none;
 }
-button.destructive {
+.btn.destructive {
   background-color: #A0191A;
   color: #ffffff;
   border: none;
 }
-button.destructive:hover {
+.btn.destructive:hover {
   background-color: #6C0007;
   box-shadow: 0px 2px 4px rgba(11, 13, 14, 0.25);
 }
-button.destructive:active, button.destructive:focus {
+.btn.destructive:active, .btn.destructive:focus {
   background-color: #6C0007;
 }
-button.destructive:focus {
+.btn.destructive:focus {
   outline: 4px solid #FFA99B;
 }
-button.destructive:disabled {
+.btn.destructive:disabled {
   background-color: #F0F2F5;
   color: #BBBDBF;
   pointer-events: none;

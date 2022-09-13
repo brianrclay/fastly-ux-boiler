@@ -505,3 +505,7 @@
   .flex-dir-col{
     flex-direction: column;
   }
+
+  .inline-label{
+    width: 100px;
+  }
