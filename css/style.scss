@@ -240,6 +240,13 @@ footer{
         }
     }
 
+    .close-alert{
+        img, svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
     &.closed{
         height: 0;
         opacity: 0;

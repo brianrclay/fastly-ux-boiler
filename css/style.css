@@ -225,6 +225,10 @@ footer .legal-links a:first-child {
   width: 20px;
   height: 20px;
 }
+.alert .close-alert img, .alert .close-alert svg {
+  width: 20px;
+  height: 20px;
+}
 .alert.closed {
   height: 0;
   opacity: 0;
