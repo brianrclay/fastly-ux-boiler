@@ -233,6 +233,13 @@ footer{
     padding: 16px 24px;
     transition: $transition;
 
+    .left{
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
     &.closed{
         height: 0;
         opacity: 0;
